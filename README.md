@@ -1,34 +1,79 @@
+
 # Fake News Detection Using LSTM
 
-## Overview
-A deep learning project that classifies news text as Fake News or Real News
-using an LSTM neural network built with TensorFlow and Keras.
+A deep learning project that classifies news text as **Fake News** or **Real News** using a Long Short-Term Memory (LSTM) neural network.
 
-## Dataset
-Fake.csv and True.csv.
-Labels: Fake News = 0, Real News = 1.
+## 🚀 Live Demo
 
-## Model
-- TextVectorization
-- Embedding
-- LSTM
-- Dropout
-- Dense layers
-- Sigmoid output
+Try the deployed application here:
 
-## Dataset Split
-- Training: 35,413 articles
-- Validation: 4,427 articles
-- Testing: 4,427 articles
+**[Open Fake News Detector](https://fake-news-detection-lstm-vfbjngtwhbpco79xstg9ep.streamlit.app/)**
 
-## Test Results
-- Accuracy: 95.50%
-- Fake News F1-score: 95.64%
-- Real News F1-score: 95.37%
+## 📌 Project Overview
 
-## Limitations
-Performance is measured on this dataset. It may not generalize to
-all real-world news. Predictions should not be treated as fact verification.
+This project uses Natural Language Processing (NLP) and an LSTM-based deep learning model to analyze news text and predict whether it resembles fake or real news based on patterns learned from the training dataset.
 
-## Run
-Load the saved .keras model in a compatible TensorFlow environment.
+## 🛠️ Technologies Used
+
+- Python
+- TensorFlow and Keras
+- Natural Language Processing (NLP)
+- LSTM (Long Short-Term Memory)
+- Pandas and NumPy
+- Streamlit
+- Git and GitHub
+
+## 📊 Model Performance
+
+| Metric | Result |
+|---|---:|
+| Test Accuracy | 95.50% |
+| Test Loss | 0.1122 |
+| Training Epochs | 3 |
+
+**Test dataset:** 4,427 news articles.
+
+## ⚙️ Project Workflow
+
+1. Load and combine fake and real news datasets.
+2. Clean and prepare the news text and labels.
+3. Split the dataset into training, validation, and testing sets.
+4. Convert text into numerical sequences using Keras TextVectorization.
+5. Train an LSTM-based deep learning model.
+6. Evaluate the model on unseen test data.
+7. Deploy the trained model using Streamlit.
+
+## 💻 Run Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/KanchanNanda/fake-news-detection-lstm.git
+cd fake-news-detection-lstm
+```
+
+Install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+streamlit run app.py
+```
+
+## ⚠️ Limitations
+
+- Predictions are based on patterns learned from the training dataset.
+- Dataset bias and writing style may affect predictions.
+- A prediction is not proof that a news article is authentic or false.
+- Important claims should be verified using reliable sources.
+
+## 👩‍💻 Author
+
+**Kanchan Nanda**
+
+GitHub: [KanchanNanda](https://github.com/KanchanNanda)
+
