@@ -71,6 +71,14 @@ streamlit run app.py
 - A prediction is not proof that a news article is authentic or false.
 - Important claims should be verified using reliable sources.
 
+## 📸 Screenshots
+
+### Fake News Prediction
+![Fake News Prediction](screenshots/fake-news-result.png)
+
+### Real News Prediction
+![Real News Prediction](screenshots/real-news-result.png)
+
 ## 👩‍💻 Author
 
 **Kanchan Nanda**
